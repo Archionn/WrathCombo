@@ -105,7 +105,8 @@ internal partial class WHM : Healer
                 HasBattleTarget() &&
                 AeroList.TryGetValue(OriginalHook(Aero),
                     out var dotDebuffID) &&
-                GetStatusEffectRemainingTime(dotDebuffID) <= refreshTimer &&
+                GetStatusEffectRemainingTime(dotDebuffID, CurrentTarget) <=
+                refreshTimer &&
                 GetTargetHPPercent() > hpThreshold)
                 return OriginalHook(Aero);
 

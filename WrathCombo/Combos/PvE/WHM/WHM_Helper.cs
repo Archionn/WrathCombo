@@ -94,7 +94,7 @@ internal partial class WHM
         {
             { Aero, Debuffs.Aero },
             { Aero2, Debuffs.Aero2 },
-            { Dia, Debuffs.Dia }
+            { Dia, Debuffs.Dia },
         };
 
     // Gauge Stuff
